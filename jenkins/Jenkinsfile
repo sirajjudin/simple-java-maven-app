@@ -1,8 +1,11 @@
 pipeline {
-    agent any
+    agent {
+        label 'jenkinslave'
+    }
     options {
         skipStagesAfterUnstable()
     }
+        
     stages {
         stage('Build') {
             steps {
