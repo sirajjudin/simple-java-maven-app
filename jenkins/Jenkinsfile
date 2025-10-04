@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'jenkinsalve'
-    }
+    agent none
     options {
         skipStagesAfterUnstable()
     }
